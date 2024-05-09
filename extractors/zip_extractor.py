@@ -41,5 +41,5 @@ class ZipExtractor(Extractor):
         """
         remove temp file
         """
-        logging.info(f"Deleting temp file")
+        logging.info("Deleting temp file")
         os.remove(self.output + "/tmp")

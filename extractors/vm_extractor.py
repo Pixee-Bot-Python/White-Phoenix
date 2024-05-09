@@ -59,7 +59,7 @@ class VMExtractor(Extractor):
                                        end_addr = file_match.end()
                                        logging.info(f"found file end at {hex(old_addr + start_addr + end_addr)}")
                                 else:
-                                       logging.info(f"didn't find file end")
+                                       logging.info("didn't find file end")
                                        break
                                 self.write_file(file_type, self.file_content[start_addr + old_addr:end_addr + old_addr + start_addr], i)
 
